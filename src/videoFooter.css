@@ -1,0 +1,53 @@
+.videoFooter{
+    position: relative;
+    bottom: 190px;
+    margin-left: 30px;
+    color: white;
+    display: flex;
+    
+}
+
+.videoFooter_record {
+    animation: spinTheRecord infinite 5s linear;
+    height: 40px;
+       /* invert is for the color inversion normally it is black */
+    /* filter: invert(1);   */
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+    
+}
+.videoFooter_text{
+   flex: 1;
+}
+
+.videoFooter__icon{
+    position: absolute;
+ }
+
+.videoFooter_text > h3{
+    padding-bottom: 20px;
+ } 
+ .videoFooter_text > p{
+    padding-bottom: 20px;
+ } 
+
+.videoFooter__ticker > .ticker{
+    height: fit-content;
+    margin-left: 30px;
+    width: 60%;
+}
+
+.videoFooter__ticker h1{
+    padding-top: 7px;
+}
+
+@keyframes spinTheRecord {
+    from{
+    transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+        }
+
+}
